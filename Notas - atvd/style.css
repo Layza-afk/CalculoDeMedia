@@ -33,10 +33,10 @@ body {
     font-size: 16px;
 }
 
-.conteudo .linha {
-    width: 100%;
+hr {
+    margin: 10px 0;
     border: 1px solid black;
-    margin: 10px;
+    width: 100%;
 }
 
 form {
