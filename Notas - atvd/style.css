@@ -51,6 +51,11 @@ form div {
     margin: 5px;
 }
 
+form input {
+    display: flex;
+    text-align: center;
+}
+
 .divResposta {
     margin-top: 5px;
     font-size: 16px;
@@ -61,9 +66,4 @@ form div {
     border-radius: 4px;
     color: green;
     cursor: pointer;
-}
-
-#resp {
-    margin: 5px;
-    border: 1px solid black;
 }

@@ -29,7 +29,5 @@ function result() {
     } else if (confirme === "S") {
         let media = (parseFloat(p1) + parseFloat(p2)) / 2;
         document.getElementById('media').innerText = media;
-
-        document.getElementById("resp").innerText = media;
     }
 }
