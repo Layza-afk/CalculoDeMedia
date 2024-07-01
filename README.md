@@ -1,2 +1,2 @@
-# CalculoDeMedia
- calcular a media de dois numeros.
+# Calculo De Media
+ calcular a media de duas notas.
