@@ -1,69 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
-
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Roboto Mono', Arial, sans-serif;
-}
-
-body {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: #569ddc;
-}
-
-.conteudo {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    margin-top: 16%;
-    padding: 18px;
-    border-radius: 10px;
-    background: #fff;
-}
-
-.conteudo h1 {
-    font-size: 24px;
-    margin-bottom: 18px;
-}
-
-.conteudo .aluno {
-    font-size: 16px;
-}
-
-hr {
-    margin: 10px 0;
-    border: 1px solid black;
-    width: 100%;
-}
-
-form {
-    display: flex;
-    justify-content: space-between;
-    font-size: 16px;
-}
-
-form div {
-    display: flex;
-    flex-direction: column;
-    margin: 5px;
-}
-
-form input {
-    display: flex;
-    text-align: center;
-}
-
-.divResposta {
-    margin-top: 5px;
-    font-size: 16px;
-}
-
-.divResposta button {
-    padding: 3px;
-    border-radius: 4px;
-    color: green;
-    cursor: pointer;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 16px;
+  font-family: "Courier New", Courier, monospace;
 }

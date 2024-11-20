@@ -8,37 +8,43 @@
   </head>
 
   <body>
-    <div class="conteudo">
+    <div class="conteiner">
       <h1>VERIFICADOR DE NOTAS</h1>
 
-      <div class="aluno">
-        <label for="">ALUNO:</label>
+      <div class="campoAluno">
+        <label>Aluno:</label>
         <input type="text" id="nome" />
       </div>
 
-      <hr>
-
-      <form>
+      <div class="campoNotas">
         <div>
-          <label for="">1º Avaliação</label>
-          <input type="number" id="nota1" />
+          <label>P1</label>
+          <input type="number" id="p1" />
         </div>
 
         <div>
-          <label for="">2º Avaliação</label>
-          <input type="number" id="nota2" />
+          <label>P2</label>
+          <input type="number" id="p2" />
         </div>
 
         <div>
-          <label for="">Média</label>
-          <div id="media"></div>
+          <label>P3</label>
+          <input type="number" id="p3" />
         </div>
-      </form>
 
-      <div class="divResposta">
-        <button onclick="result()">Resultado</button>
+        <div>
+          <label>Média</label>
+          <span id="media"></span>
+        </div>
       </div>
     </div>
+
+    <div class="campoSitu">
+      <p>Situação:</p>
+      <span id="situ"></span>
+    </div>
+
+    <button onclick="result()">Calcular</button>
 
     <script src="script.js"></script>
   </body>

@@ -1,33 +1,27 @@
 function result() {
-    let nome = document.getElementById('nome').value;
+  let nome = document.getElementById("nome").value;
+  let p1 = document.getElementById("p1").value;
+  let p2 = document.getElementById("p2").value;
+  let p3 = document.getElementById("p3").value;
 
-    if (nome === "") {
-        alert ("nome");
-        return;
-    }
+  if (nome === "" || p1 === "" || p2 === "" || p3 === "") {
+    alert("Preencha os campos corretamente");
+    return;
+  }
 
-    let p1 = document.getElementById('nota1').value;
+  let confirme = prompt(
+    "Você inseriu os dados corretamente? S/N"
+  ).toUpperCase();
 
-    if (p1 === "" || isNaN(p1) || p1 < 0 || p1 > 10) {
-        alert("p1");
-        return;
-    }
+  if (confirme === "N") {
+    alert("Corriga-as!");
+    return;
+  } else if (confirme === "S") {
+    let media = (parseFloat(p1) + parseFloat(p2) + parseFloat(p3)) / 3;
 
-    let p2 = document.getElementById('nota2').value;
+    document.getElementById("media").innerText = media.toFixed(2);
 
-    if (p2 === "" || isNaN(p2) || p2 < 0 || p2 > 10) {
-        alert("p2");
-        return;
-    }
-
-    
-    let confirme = prompt("Você inseriu os dados corretamente? S/N");
-    
-    if (confirme === "N") {
-        alert("Corriga-as")
-        return;
-    } else if (confirme === "S") {
-        let media = (parseFloat(p1) + parseFloat(p2)) / 2;
-        document.getElementById('media').innerText = media;
-    }
+    let situacao = media >= 7 ? "Aprovado" : "Reprovado";
+    document.getElementById("situ").innerText = situacao;
+  }
 }
